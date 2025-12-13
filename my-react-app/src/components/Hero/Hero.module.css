@@ -1,0 +1,45 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+}
+
+.text {
+  max-width: 500px;
+}
+
+.text h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.text button {
+  background-color: #5b2dde;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.image {
+  width: 400px;
+  height: 260px;
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+}

@@ -1,0 +1,21 @@
+.categories {
+  padding: 40px;
+  text-align: center;
+}
+
+.categories h2 {
+  margin-bottom: 24px;
+}
+
+.list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.card {
+  padding: 20px 24px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  cursor: pointer;
+}

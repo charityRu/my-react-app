@@ -1,0 +1,25 @@
+.cta {
+  margin: 60px 40px;
+  padding: 40px;
+  background-color: #5b2dde;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.cta h2 {
+  margin-bottom: 12px;
+}
+
+.cta p {
+  margin-bottom: 20px;
+}
+
+.cta button {
+  background-color: white;
+  color: #5b2dde;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+}
