@@ -1,26 +1,24 @@
-import styles from "./Hero.module.css"; // hero styles
+import styles from "./Hero.module.css";
+
+import heroImage from "../../assets/Hero.svg";
 
 function Hero() {
   return (
-    <section className={styles.hero}>
-      <div className={styles.text}>
-        <span className={styles.welcome}>
-          WELCOME EDUNITY ONLINE COURSES
-        </span>
-
-        <h1>Achieving Your Dreams Through Education</h1>
-
-        <p>
-          We are experienced in educational platforms and skilled strategies
-          for the success of online learning.
-        </p>
-
-        <button>Find Courses</button>
-      </div>
-
-      <div className={styles.image}>
-        <div className={styles.placeholder}>
-          Hero Image
+    <section
+      className={styles.hero}
+      
+    >
+      <div className={styles.content}>
+        <div className={styles.text}>
+          <h1>Achieving Your Dreams Through Education</h1>
+          <p>
+            Build skills for today, tomorrow, and the future.
+            Explore a wide range of courses and start learning now.
+          </p>
+          <button>Get Started</button>
+        </div> 
+        <div className={styles.image}>
+          <img src={heroImage} alt="Hero Illustration" />
         </div>
       </div>
     </section>
