@@ -43,3 +43,10 @@
   justify-content: center;
   color: #888;
 }
+.welcome {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #6c63ff;
+  margin-bottom: 12px;
+  display: inline-block;
+}

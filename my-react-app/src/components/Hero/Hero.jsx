@@ -1,15 +1,21 @@
-import styles from "./Hero.module.css"; //hero styles
-//hero component
+import styles from "./Hero.module.css"; // hero styles
+
 function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.text}>
+        <span className={styles.welcome}>
+          WELCOME EDUNITY ONLINE COURSES
+        </span>
+
         <h1>Achieving Your Dreams Through Education</h1>
+
         <p>
-          Build skills for today, tomorrow, and the future.
-            Explore a wide range of courses and start learning now.
+          We are experienced in educational platforms and skilled strategies
+          for the success of online learning.
         </p>
-        <button>Get Started</button>
+
+        <button>Find Courses</button>
       </div>
 
       <div className={styles.image}>
