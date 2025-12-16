@@ -5,9 +5,7 @@ import heroImage from "../../assets/Hero.svg";
 function Hero() {
   return (
     <section
-      className={styles.hero}
-      
-    >
+      className={styles.hero} >
       <div className={styles.content}>
         <div className={styles.text}>
           <h1>Achieving Your Dreams Through Education</h1>

@@ -1,14 +1,15 @@
 import styles from "./WhyChooseUs.module.css";
+import whyImage from "../../assets/community.svg";
 
 function WhyChooseUs() {
   return (
     <section className={styles.why}>
-      <div className={styles.wrapper}>
-        
-        {/* LEFT SIDE */}
+      <div className={styles.container}>
+
+        {/* LEFT */}
         <div className={styles.left}>
-          <h2>Why Choose Us</h2>
-          <p>
+          <h2>Creating A Community of Lifelong Learners</h2>
+          <p className={styles.description}>
             We offer high-quality online education designed to help
             students build skills and grow their careers.
           </p>
@@ -18,17 +19,14 @@ function WhyChooseUs() {
               <h4>Expert Instructors</h4>
               <p>Learn from experienced professionals.</p>
             </div>
-
             <div className={styles.card}>
               <h4>Flexible Learning</h4>
               <p>Study at your own pace from anywhere.</p>
             </div>
-
             <div className={styles.card}>
               <h4>Certified Courses</h4>
               <p>Earn certificates after completion.</p>
             </div>
-
             <div className={styles.card}>
               <h4>Affordable Prices</h4>
               <p>Quality education at reasonable cost.</p>
@@ -36,11 +34,10 @@ function WhyChooseUs() {
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
+        {/* RIGHT */}
         <div className={styles.right}>
-          <div className={styles.imagePlaceholder}>
-            Why Choose Us Image
-          </div>
+          <div className={styles.imageFrame}></div>
+          <img src={whyImage} alt="Why choose us" />
         </div>
 
       </div>

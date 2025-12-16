@@ -1,10 +1,12 @@
+
 .banner {
-  height: 280px;
-  background-color: #ddd; /* placeholder for image */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 60px 0;
+  padding: 80px 20px;
+  text-align: center;
+  color: #ffffff;
+  background-image: url("../../assets/banner.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Dark overlay so text is readable */
