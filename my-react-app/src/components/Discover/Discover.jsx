@@ -1,34 +1,39 @@
 import styles from "./Discover.module.css";
+import leftImg from "../../assets/left.svg";
+import rightImg from "../../assets/right.svg";
 
+// This section highlights what students gain from joining
 function Discover() {
   return (
     <section className={styles.discover}>
-      <h2>Discover Your Career Path</h2>
-      <p className={styles.subtext}>
-        Choose the right path and gain skills that fit your future goals.
-      </p>
+      <span className={styles.badge}>CHOOSE YOUR CAREER</span>
+      <h2>Discover Your Gain</h2>
 
       <div className={styles.cards}>
-        <div className={styles.card}>
+        {/* LEFT CARD */}
+        <div className={styles.cardPurple}>
           <div className={styles.text}>
-            <h3>Start Learning</h3>
+            <h4>Start From Today</h4>
             <p>
-              Explore courses designed to help you build real-world skills.
+              Join our training courses and build your skill with
+              practical learning experiences.
             </p>
-            <button>Explore Courses →</button>
+            <button>Join Now</button>
           </div>
-          <div className={styles.image}>Image</div>
+          <img src={leftImg} alt="Student learning" />
         </div>
 
-        <div className={styles.card}>
+        {/* RIGHT CARD */}
+        <div className={styles.cardYellow}>
           <div className={styles.text}>
-            <h3>Build Your Gain</h3>
+            <h4>Start From Today</h4>
             <p>
-              Gain knowledge that prepares you for today’s job market.
+              Improve your career opportunities by learning from
+              experienced instructors.
             </p>
-            <button>Get Started →</button>
+            <button>Join Now</button>
           </div>
-          <div className={styles.image}>Image</div>
+          <img src={rightImg} alt="Student smiling" />
         </div>
       </div>
     </section>

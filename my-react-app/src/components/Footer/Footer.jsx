@@ -1,57 +1,70 @@
 import styles from "./Footer.module.css";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
 
+// Footer section
 function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.wrapper}>
 
         {/* COLUMN 1 */}
-        <div className={styles.brand}>
-          <h4>CourseHub</h4>
+        <div className={styles.col}>
+          <h3>Edunity</h3>
           <p>
-            Empowering learners through quality online education.
+            Building skills for the future through accessible
+            and quality online education.
           </p>
 
           <div className={styles.socials}>
-            <span>FB</span>
-            <span>TW</span>
-            <span>IG</span>
+            <FaFacebookF />
+            <FaTwitter />
+            <FaLinkedinIn />
+            <FaInstagram />
           </div>
         </div>
 
         {/* COLUMN 2 */}
-        <div>
-          <h4>Our Services</h4>
-          <ul>
-            <li>Online Courses</li>
-            <li>Certification</li>
-            <li>Career Guidance</li>
-            <li>Skill Training</li>
-          </ul>
-        </div>
-
-        {/* COLUMN 3 */}
-        <div>
-          <h4>Quick Links</h4>
+        <div className={styles.col}>
+          <h4>Company</h4>
           <ul>
             <li>About Us</li>
-            <li>Courses</li>
+            <li>Careers</li>
             <li>Blog</li>
             <li>Contact</li>
           </ul>
         </div>
 
-        {/* COLUMN 4 */}
-        <div>
-          <h4>Gallery</h4>
-          <div className={styles.gallery}>
-            <div className={styles.img}>Img</div>
-            <div className={styles.img}>Img</div>
-            <div className={styles.img}>Img</div>
-            <div className={styles.img}>Img</div>
-          </div>
+        {/* COLUMN 3 */}
+        <div className={styles.col}>
+          <h4>Courses</h4>
+          <ul>
+            <li>Design</li>
+            <li>Development</li>
+            <li>Marketing</li>
+            <li>Business</li>
+          </ul>
         </div>
 
+        {/* COLUMN 4 */}
+        <div className={styles.col}>
+          <h4>Support</h4>
+          <ul>
+            <li>Help Center</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+          </ul>
+        </div>
+
+      </div>
+
+      {/* BOTTOM */}
+      <div className={styles.bottom}>
+        <p>© 2025 Edunity. All rights reserved.</p>
       </div>
     </footer>
   );

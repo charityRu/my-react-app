@@ -1,17 +1,26 @@
 import styles from "./Newsletter.module.css";
 
+// Newsletter subscription section
 function Newsletter() {
   return (
     <section className={styles.newsletter}>
       <div className={styles.wrapper}>
+        {/* LEFT TEXT */}
         <div className={styles.text}>
-          <h3>Join Our Newsletter</h3>
-          <p>Get updates on new courses and special offers.</p>
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>
+            Stay updated with the latest courses, news, and learning
+            opportunities.
+          </p>
         </div>
 
+        {/* RIGHT FORM */}
         <form className={styles.form}>
-          <input type="email" placeholder="Enter your email" />
-          <button>Subscribe</button>
+          <input
+            type="email"
+            placeholder="Enter your email address"
+          />
+          <button type="submit">Subscribe</button>
         </form>
       </div>
     </section>

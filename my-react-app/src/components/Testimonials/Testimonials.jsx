@@ -1,34 +1,45 @@
 import styles from "./Testimonials.module.css";
+import { FaQuoteLeft } from "react-icons/fa";
 
 function Testimonials() {
   return (
     <section className={styles.testimonials}>
-      <h2>Creating a Community of Life Long Learners</h2>
+      
+      <span className={styles.badge}>TESTIMONIAL</span>
+      <h2>Creating A Community Of <br /> Life Long Learners.</h2>
 
       <div className={styles.cards}>
+        
         <div className={styles.card}>
-          <span className={styles.quote}>"</span>
+          <FaQuoteLeft className={styles.quote} />
           <p>
-            This platform helped me gain confidence and real skills for my career.
+            Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
           </p>
-          <h4>Student Name</h4>
+          <h4>Kathy Sullivan</h4>
+          <span>CEO at Ordinat</span>
         </div>
 
         <div className={styles.card}>
-          <span className={styles.quote}>"</span>
+          <FaQuoteLeft className={styles.quote} />
           <p>
-            The courses are easy to follow and very practical.
+            Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
           </p>
-          <h4>Student Name</h4>
+          <h4>Elsie Stroud</h4>
+          <span>CEO at Edwards</span>
         </div>
 
         <div className={styles.card}>
-          <span className={styles.quote}>"</span>
+          <FaQuoteLeft className={styles.quote} />
           <p>
-            I learned at my own pace and improved my skills fast.
+            Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
           </p>
-          <h4>Student Name</h4>
+          <h4>Kathy Sullivan</h4>
+          <span>CEO at Ordinat</span>
         </div>
+
       </div>
     </section>
   );

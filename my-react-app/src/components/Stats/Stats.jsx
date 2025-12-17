@@ -1,28 +1,40 @@
 import styles from "./Stats.module.css";
+import {
+  FaUserGraduate,
+  FaBookOpen,
+  FaSmile,
+  FaUsers,
+} from "react-icons/fa";
 
 function Stats() {
   return (
-    <section className={styles.stats}>
-      <div className={styles.wrapper}>
-        <div className={styles.item}>
+    <section className={styles.statsSection}>
+      <div className={styles.statsWrapper}>
+        
+        <div className={styles.statCard}>
+          <FaUserGraduate className={styles.icon} />
           <h3>3K+</h3>
           <p>Successfully Trained</p>
         </div>
 
-        <div className={styles.item}>
+        <div className={styles.statCard}>
+          <FaBookOpen className={styles.icon} />
           <h3>15K+</h3>
           <p>Classes Completed</p>
         </div>
 
-        <div className={styles.item}>
-          <h3>97%</h3>
+        <div className={styles.statCard}>
+          <FaSmile className={styles.icon} />
+          <h3>97K+</h3>
           <p>Satisfaction Rate</p>
         </div>
 
-        <div className={styles.item}>
-          <h3>102+</h3>
-          <p>Expert Instructors</p>
+        <div className={styles.statCard}>
+          <FaUsers className={styles.icon} />
+          <h3>102K+</h3>
+          <p>Students Community</p>
         </div>
+
       </div>
     </section>
   );
